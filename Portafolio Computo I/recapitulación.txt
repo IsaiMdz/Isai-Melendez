@@ -1,2 +1,0 @@
-Se creo una maquina virtual en el programa de Virtual Vox y se explico los pasos correctos a seguir para la instalación de Debian 9, 
-se explico cuales serían las configuraciones en los adaptadores de red antes de iniciar con dicha instalcion del sistema.

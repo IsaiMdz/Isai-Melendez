@@ -1,0 +1,13 @@
+LÓGICA DE NEGOCIOS
+
+- Rubro del sitio: El sitio web esta orientado a clientes que deseen adquirir computadoras portatiles y de escritorio de ultima generación,
+                   poniendo a su disposición variedad de ordenadores acorde a sus necesidades y preferencias personales.
+                   
+
+- Nombre del sitio: https://pcstationshop.com/ 
+    
+
+- Paleta de colores: https://color.adobe.com/es/create/color-wheel/?base=1&rule=Analogous&selected=1&name=Mi%20tema%20de%20Color&mode=rgb&rgbvalues=0.3139468404988676,0.9088829641677374,0.91,0.053409406142473595,0.0724074670204706,0.91,0,0.4183249024850921,0.8200000000000001,0.4046275871655651,0.01698655449599182,0.8200000000000001,0.8474163281541397,0.6262851212986323,0.85&swatchOrder=0,1,2,3,4
+    
+
+- Tipografía: https://fonts.google.com/selection?selection.family=Oswald

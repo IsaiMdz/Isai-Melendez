@@ -1,0 +1,185 @@
+
+PROPIEDAD POSITION
+
+La propiedad position de CSS especifica como se posiciona un elemento en el documento. Las propiedades top, right, bottom, y left determinan 
+la localizacion final de los elementos posicionados.
+
+Tipos de Posicionamiento:
+
+- Un elemento posicionado es un elemento cuyo valor de position computado es relative, absolute, fixed, o sticky. (En otras palabras, 
+  cualquiera excepto static.)
+
+- Un elemento posicionado relativamente es un elemento cuyo valor de position computado es relative. Las propiedades top y bottom especifican el 
+  desplazamiento vertical desde su posición original; las propiedades left y rightespecifican su desplazamiento horizontal
+
+- Un elemento posicionado absolutamente es un elemento cuyo valor de  position computado es absolute o fixed. Las propiedades top, right, bottom, 
+  y  left especifica el desplazamiento desde los bordes del bloque contenedor del elemento. (El bloque contenedor es el ancestro más cercano 
+  posicionado.) Si el elemento tiene márgenes, se agregarán al desplazamiento.
+
+- Un elemento positionado como sticky es un elemento cuyo valor de  position computado es sticky. Se trata como un elemento posicionado relativamente 
+  hasta que su bloque contenedor cruza el límite establecido, desde ese punto queda fijo.
+
+La propiedad position es especificada como una palabra única elegida de la siguiente lista de valores.
+
+Valores:
+
+static
+El elemento es posicionado de acuerdo al flujo normal del documento. Las propiedades top, right, bottom, left, and z-index no tienen efecto.
+Este es el valor por defecto.
+
+relative
+El elemento se posiciona de acuerdo con el flujo normal del documento y, a continuación compensado con relación a sí misma sobre la base de los valor
+es de top, right, bottom, y left. El desplazamiento no afecta la posición de ningún otro elemento; por lo tanto, el espacio dado para el elemento en
+ el diseño de la página es el mismo que si la posición fuera static. Este valor crea un nuevo contexto de apilamiento cuando el valor de z-indexno 
+es auto. El efecto de relativesobre table-*-group, table-row, table-column, table-cell, y table-captionelementos no está definido.
+
+absolute
+El elemento se elimina del flujo de documentos normal; no se crea espacio para el elemento en el diseño de la página. En cambio, se posiciona en 
+relación con su antecesor más cercano, si lo hubiera; de lo contrario, se coloca en relación con el bloque que contiene inicial . Su posición final 
+se determina por los valores de top, right, bottom, y left. Este valor crea un nuevo contexto de apilamiento cuando el valor de z-indexno es auto. 
+Los cuadros posicionados de manera absoluta pueden tener márgenes, y no se colapsan con ningún otro margen.
+
+fixed
+El elemento se elimina del flujo de documentos normal; no se crea espacio para el elemento en el diseño de la página. En cambio, se coloca en 
+relación con la ventana gráfica de la pantalla y no se mueve cuando se desplaza. Su posición final se determina por los valores de top, right, 
+bottom, y left. Este valor siempre crea un nuevo contexto de apilamiento . Cuando un antepasado tiene transform, perspectiveo filterconjunto de 
+propiedades a algo distinto none, que ancestro se utiliza como contenedor en lugar de la ventana (ver las transformaciones CSS Spec ). 
+En los documentos impresos, el elemento se coloca en la misma posición en cada página.
+
+sticky 
+El elemento se posiciona de acuerdo con el flujo normal del documento, y luego desplazado con respecto a su raíz flujo y bloque de contención , 
+incluyendo elementos relacionados con tablas, basado en los valores de top, right, bottom, y left. El desplazamiento no afecta la posición de ningún
+otro elemento. Este valor siempre crea un nuevo contexto de apilamient.
+
+
+PROPIEDAD WIDTH
+
+La propiedad CSS width especifica la anchura del area de contenido de un elemento. El área de contenido está dentro del padding, borde, y margen 
+del elemento.
+
+Valor inicial: auto
+
+Valores:
+
+<length>
+Ver <length> para unidades disponibles.
+
+<percentage>
+Especificado con el tipo <percentage> como porcentaje de la anchura del bloque contenedor. Si la anchura del bloque contenedor depende de la anchura
+del elemento, la presentación resultante es indefinida.
+
+border-box 
+Si está presente, el valor <length> o <percentage> precedente es aplicado a los límites del borde del elemento.
+
+content-box 
+Si está presente, el valor <length> o <percentage> precedente será aplicado a los límites de contenido del elemento.
+
+auto
+El navegador calculará y seleccionará la anchura para el elemento especificado.
+
+fill
+Use el tamaño fill-available para elementos inline o block, según sea más apropiado para el modo de escritura.
+
+max-content 
+La anchura preferida intrínseca.
+
+min-content 
+La anchura mínima intrínseca.
+
+available 
+La anchura del bloque contenedor menos su margen horizontal, borde y padding.
+
+fit-content 
+El mayor entre:
+- la anchura mínima intrínseca.
+- la menor entre la anchura prefereida intrínseca y la anchura disponible.
+
+
+PROPIEDAD HEITH
+
+La propiedad CSS height especifica la altura del area de contenido de un elemento. El área de contenido está dentro del padding, borde, 
+y margen del elemento.
+
+<length>
+Ver <length> para unidades disponibles.
+
+<percentage>
+Especificado con el tipo <percentage> como porcentaje de la altura del bloque contenedor. 
+
+border-box 
+Si está presente, el valor <length> o <percentage> precedente es aplicado a los límites del borde del elemento.
+
+content-box 
+Si está presente, el valor <length> o <percentage> precedente será aplicado a los límites de contenido del elemento.
+
+auto
+El navegador calculará y seleccionará la altura para el elemento especificado.
+
+fill
+Use el tamaño fill-available para elementos inline o block, según sea más apropiado para el modo de escritura.
+
+max-content 
+La altura preferida intrínseca.
+
+min-content 
+La altura mínima intrínseca.
+
+available 
+La altura del bloque contenedor menos su margen vertital, borde y padding.
+
+fit-content 
+El mayor entre:
+- la altura mínima intrínseca.
+- la menor entre la altura prefereida intrínseca y la altura disponible.
+
+
+PROPIEDAD MARGIN
+
+La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado 
+con las otras propiedades de margen:  margin-top, margin-right, margin-bottom y margin-left.
+
+También se permiten valores negativos.
+
+Valores:
+
+Acepta uno, dos , tres  o cuatro valores de los siguientes:
+
+<length>
+Especifica un ancho fijo. Valores negativos son permitidos. Mira <length> para conocer las posibles unidades.
+
+<percentage>
+Un <percentage> relativo al ancho del bloque contenedor. Se permiten valores negativos.
+
+auto
+auto es reemplazado por algún valor apropiado. Por ejemplo, puede usarse para centrar horizontalmente un elemento bloque.
+div { width:50%;  margin:0 auto; } centrará el div horizontalmente.
+
+Un único valor aplicará para todos los cuatro lados.
+Dos valores aplicarán: El primer valor para arriba y abajo, el segundo valor para izquierda y derecha.
+Tres  valores aplicarán: El primero para arriba, el segundo para izquierda y derecha, el tercero para abajo.
+Cuatro valores aplicarán en sentido de las manecillas del reloj empezando desde arriba. (Arriba, derecha, abajo, izquierda)
+
+
+PROPIEDAD PADDING
+
+La propiedad CSS padding establece el espacio de relleno requerido por todos los lados de un elemento. El área de padding es el espacio entre el 
+contenido del elemento y su borde (border) no se permiten valores negativos.
+
+La propiedad padding es un atajo para evitar la asignación de cada lado por separado (padding-top, padding-right, padding-bottom, padding-left).
+
+Valores:
+
+Especifica uno, dos, tres o cuatro de los siguientes valores:
+
+<length>
+Especifica un ancho fijo no negativo. Ver más detalles <length>.
+
+<percentage>
+Con respecto a la anchura("width") del bloque que lo contiene.
+
+Uno: un valor unico se aplica a los 4 lados.
+Dos: el primer valor se aplica a arriba y abajo, el segundo valor se aplica a derecha e izquierda.
+Tres: el primer valor se aplica a arriba, el segundo valor a derecha e izquierda y el tercer valor se aplica a abajo del elemento.
+Cuatro: el primer valor se aplica a arriba, el segundo valor se aplica a la derecha, el tercer valor se aplica a abajo y el cuarto valor se aplica
+a la izquierda. 
+

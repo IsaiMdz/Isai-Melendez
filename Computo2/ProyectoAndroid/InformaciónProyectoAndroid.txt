@@ -1,0 +1,9 @@
+Idea o Problema:
+
+El dueño de un taller de autos desea tener un registro detallado, dinámico e interactivo de las reparaciones que realizan a los autos de sus 
+clientes, incluyendo el precio de cada una de ellas.
+
+Solución:
+
+Desarrollar una aplicación donde se pueda hacer un registro de todas las reparaciones que se realicen a un auto y de esta forma el dueño del 
+taller podrá tener un registro o historial detallado de todo lo realizado en cada auto, que le servirá como referencia para próximas reparaciones.
